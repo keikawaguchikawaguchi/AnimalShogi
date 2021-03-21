@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>動物将棋</title>
+</head>
+
+<body>
+    <script type="text/javascript" src="game.js"></script>
+    <script type="text/javascript" src="common.js"></script>
+    <script type="text/javascript" src="player.js"></script>
+    <script type="text/javascript" src="bord.js"></script>
+    <script type="text/javascript" src="piece.js"></script>
+    <script type="text/javascript" src="AI/erizabeth_v1.js"></script>
+    
+    <div style="
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;">
+        <div id="gamefild" style="
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 50%;
+        ">
+        </div>
+        <div id="logfild" style="
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        right: 0;
+        "></div>
+    </div>
+
+
+    <script>
+        var game = new Game(document.getElementById('gamefild'),document.getElementById('logfild'))
+        game.playGame()
+    </script>
+</body>
+
+</html>
